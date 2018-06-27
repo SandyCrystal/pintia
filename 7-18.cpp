@@ -1,17 +1,14 @@
 # include <bits/stdc++.h>
 using namespace std;
 int main(void){
-	int a,b,i,k,ma,mb;
-	while(scanf("%d%d%d",&a,&b,&k)&&a!=0&&b!=0){
-		ma=a;
-		mb=b;
-		for(i=0;i<k;i++){
-			if(ma%10!=mb%10)break;
-			ma/=10;
-			mb/=10;
+	int m,n,i,j,sum=0,x;
+	scanf("%d%d",&m,&n);
+	for(i=0;i<m;i++){
+		for(j=0;j<n;j++){
+			scanf("%d",&x);
+			if(i!=0&&i!=m-1&&j!=0&&j!=n-1)sum+=x;
 		}
-		if(i==k)printf("-1\n");
-		else printf("%d\n",a+b);
-	}
+	} 
+	printf("%d\n",sum);
 	return 0;
 }
