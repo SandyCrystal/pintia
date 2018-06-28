@@ -10,6 +10,7 @@ int main(){
 			i++;
 			k=k*10+1;
 		}while(1);
+		printf("%d\n",k);
 		do{
 			s=k/x;
 			printf("%d",s);
@@ -18,8 +19,8 @@ int main(){
 			}
 			k=k%x*10+1;
 			i++;
-		}while(1);		
-		printf(" %d",i);		
+		}while(1);
+		printf(" %d",i);
 	}
 	return 0;
 }
